@@ -1,6 +1,6 @@
 # Brainstorms
 
-A Codex skill for structured brainstorming before creative work. It helps clarify intent, explore tradeoffs, and agree on a design before implementation begins.
+A Hermes Agent skill for structured brainstorming before creative work. It helps clarify intent, explore tradeoffs, and agree on a design before implementation begins.
 
 ## Contents
 
@@ -11,11 +11,17 @@ A Codex skill for structured brainstorming before creative work. It helps clarif
 Place the skill at:
 
 ```text
-~/.codex/skills/brainstorms/SKILL.md
+~/.hermes/skills/brainstorms/SKILL.md
 ```
 
-Then restart Codex so the skill can be discovered.
+Start a new Hermes session, or run `/reset` in the current session. Hermes discovers the skill automatically; no registration is required.
+
+Verify the installation with:
+
+```bash
+hermes skills list | grep brainstorms
+```
 
 ## Use
 
-Once installed, the skill can be selected for creative work such as planning features, designing components, changing behavior, or preparing other new projects.
+Invoke the skill with `/brainstorms`, optionally followed by a task. You can also ask Hermes to use it for creative work such as planning features, designing components, changing behavior, or preparing other new projects.
